@@ -14,10 +14,10 @@ services:
   - type: web
     name: career-intelligence-platform
     runtime: docker
-    repo: https://github.com/YOUR_USERNAME/career-intelligence-platform
+    repo: https://github.com/shourya-raj0/AI-Career-Intelligence-Platform
     plan: starter
     dockerfilePath: ./Dockerfile
-    healthCheckPath: /_stcore/health
+    healthCheckPath: /health
     autoDeploy: true
     envVars:
       - key: GITHUB_TOKEN
