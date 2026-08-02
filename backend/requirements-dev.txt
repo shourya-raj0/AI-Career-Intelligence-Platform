@@ -1,0 +1,8 @@
+# Development-only test dependencies. Not installed in the Docker image.
+# Install with:  pip install -r requirements-dev.txt
+#
+# Runtime dependencies come from requirements.txt (see Dockerfile).
+
+-r requirements.txt
+
+pytest>=8.0

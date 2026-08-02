@@ -1,0 +1,34 @@
+# Render Blueprint (infrastructure-as-code deploy).
+#
+#   1. Push this repo to GitHub.
+#   2. In Render: New -> Blueprint, pick the repo. render.yaml is auto-detected.
+#   3. Replace `repo` below with your repository URL.
+#   4. Set the `GITHUB_TOKEN` / `LANGSMITH_API_KEY` secret values in the
+#      service's Environment dashboard after the first deploy.
+#
+# Uses the Starter plan because the embedding model needs >512 MB of memory.
+# Cold start downloads the ~90 MB sentence-transformers model; the first
+# analysis takes longer while it warms up.
+
+services:
+  - type: web
+    name: career-intelligence-platform
+    runtime: docker
+    repo: https://github.com/YOUR_USERNAME/career-intelligence-platform
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    autoDeploy: true
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: LANGSMITH_API_KEY
+        sync: false
+      - key: LANGSMITH_TRACING
+        value: "false"
+      - key: LANGSMITH_PROJECT
+        value: career-intelligence-evaluation
+      - key: EMBEDDING_MODEL
+        value: sentence-transformers/all-MiniLM-L6-v2
+      - key: JOB_CACHE_TTL_HOURS
+        value: "6"

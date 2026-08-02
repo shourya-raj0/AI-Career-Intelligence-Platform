@@ -1,0 +1,30 @@
+# Local development / production over HTTP.
+#
+#   docker compose up --build
+#   open http://localhost:8501
+#
+# Optional: create a `.env` file (see .env.example) so GITHUB_TOKEN and
+# LANGSMITH_* are available inside the container.
+
+services:
+  app:
+    build: .
+    image: career-intelligence-platform
+    ports:
+      - "8501:8501"
+    environment:
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+      LANGSMITH_TRACING: ${LANGSMITH_TRACING:-false}
+      LANGSMITH_PROJECT: ${LANGSMITH_PROJECT:-career-intelligence-evaluation}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      JOB_API_PROVIDER: ${JOB_API_PROVIDER:-jobicy}
+      JOB_CACHE_TTL_HOURS: ${JOB_CACHE_TTL_HOURS:-6}
+    volumes:
+      # Persist the embedding model and job cache across container restarts.
+      - hf_cache:/app/.cache/huggingface
+      - job_cache:/app/backend/data
+
+volumes:
+  hf_cache:
+  job_cache:

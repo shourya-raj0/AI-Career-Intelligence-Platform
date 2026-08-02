@@ -1,0 +1,724 @@
+{
+  "description": "Synthetic labeled profile-job pairs for Sprint 8 evaluation.",
+  "cases": [
+    {
+      "case_id": "ml-engineer",
+      "github_username": "synthetic-ml-dev",
+      "profile": {
+        "github_username": "synthetic-ml-dev",
+        "languages": [
+          {
+            "name": "Python",
+            "repository_count": 8,
+            "share": 0.8
+          },
+          {
+            "name": "C++",
+            "repository_count": 2,
+            "share": 0.15
+          },
+          {
+            "name": "SQL",
+            "repository_count": 1,
+            "share": 0.05
+          }
+        ],
+        "frameworks": [
+          {
+            "name": "PyTorch",
+            "category": "ai_ml",
+            "repository_count": 5,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "TensorFlow",
+            "category": "ai_ml",
+            "repository_count": 3,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "scikit-learn",
+            "category": "ai_ml",
+            "repository_count": 4,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "FastAPI",
+            "category": "backend",
+            "repository_count": 2,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          }
+        ],
+        "libraries": [
+          {
+            "name": "pandas",
+            "category": "data",
+            "repository_count": 4,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "numpy",
+            "category": "data",
+            "repository_count": 5,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "SQLAlchemy",
+            "category": "database",
+            "repository_count": 2,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Celery",
+            "category": "backend",
+            "repository_count": 1,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          }
+        ],
+        "domains": [
+          {
+            "name": "AI/ML",
+            "strength": 0.85,
+            "repository_count": 6,
+            "primary_skills": []
+          },
+          {
+            "name": "Data",
+            "strength": 0.6,
+            "repository_count": 4,
+            "primary_skills": []
+          },
+          {
+            "name": "Backend",
+            "strength": 0.3,
+            "repository_count": 2,
+            "primary_skills": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "synthetic-ml-dev-0",
+            "full_name": "synthetic-ml-dev/repo0",
+            "url": "https://github.com/synthetic-ml-dev/repo0",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 74.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          },
+          {
+            "name": "synthetic-ml-dev-1",
+            "full_name": "synthetic-ml-dev/repo1",
+            "url": "https://github.com/synthetic-ml-dev/repo1",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 74.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          },
+          {
+            "name": "synthetic-ml-dev-2",
+            "full_name": "synthetic-ml-dev/repo2",
+            "url": "https://github.com/synthetic-ml-dev/repo2",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 74.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          }
+        ],
+        "engineering_practices": [
+          {
+            "name": "testing",
+            "repository_count": 4,
+            "repositories": []
+          },
+          {
+            "name": "readme",
+            "repository_count": 5,
+            "repositories": []
+          },
+          {
+            "name": "ci_cd",
+            "repository_count": 3,
+            "repositories": []
+          },
+          {
+            "name": "documentation",
+            "repository_count": 4,
+            "repositories": []
+          }
+        ],
+        "quality_score": 74.0,
+        "confidence": {
+          "level": "High",
+          "score": 0.78,
+          "reason": "Synthetic snapshot for the benchmark dataset."
+        },
+        "evidence": {
+          "items": [],
+          "coverage": {},
+          "by_repository": {}
+        }
+      },
+      "jobs": [
+        {
+          "id": "j101",
+          "title": "Machine Learning Engineer",
+          "company": "NeuralWorks",
+          "location": "Remote",
+          "description": "We are hiring a Machine Learning Engineer to build and train deep learning models using PyTorch and TensorFlow. You will design neural networks, implement training pipelines, evaluate model performance, and productionize models with Docker and Kubernetes. Strong Python, numpy, and pandas skills required. Experience with scikit-learn and model deployment is a plus.",
+          "url": "https://example.com/jobs/j101",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 1
+        },
+        {
+          "id": "j102",
+          "title": "AI Research Engineer",
+          "company": "Cortex Labs",
+          "location": "Remote",
+          "description": "AI Research Engineer role focused on applied research in deep learning and natural language processing. Build with PyTorch, experiment with transformers, and ship research models to production using FastAPI microservices. Python expertise and familiarity with GPU training pipelines expected.",
+          "url": "https://example.com/jobs/j102",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 2
+        },
+        {
+          "id": "j103",
+          "title": "Data Scientist",
+          "company": "DataForge",
+          "location": "Remote",
+          "description": "Data Scientist to analyze large datasets with Python, pandas, and SQL. Build predictive models using scikit-learn, design experiments, and communicate insights to stakeholders. Strong statistical foundations and data visualization experience required.",
+          "url": "https://example.com/jobs/j103",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 3
+        },
+        {
+          "id": "j104",
+          "title": "Backend Engineer (Python)",
+          "company": "CloudScale",
+          "location": "Remote",
+          "description": "Backend Engineer building REST APIs with Python, FastAPI, and PostgreSQL. Focus on performance, testing, and containerized deployment with Docker. Some machine learning service integration is a bonus.",
+          "url": "https://example.com/jobs/j104",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 4
+        },
+        {
+          "id": "j105",
+          "title": "Frontend Developer",
+          "company": "PixelWorks",
+          "location": "Remote",
+          "description": "Frontend Developer to build responsive web applications with React and TypeScript. Experience with modern CSS, state management, and API integration required.",
+          "url": "https://example.com/jobs/j105",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 5
+        },
+        {
+          "id": "j106",
+          "title": "DevOps Engineer",
+          "company": "OpsPrime",
+          "location": "Remote",
+          "description": "DevOps Engineer responsible for CI/CD pipelines, infrastructure as code with Terraform, and AWS cloud management. Strong Linux, Kubernetes, and monitoring experience required.",
+          "url": "https://example.com/jobs/j106",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 6
+        }
+      ]
+    },
+    {
+      "case_id": "backend-engineer",
+      "github_username": "synthetic-backend-dev",
+      "profile": {
+        "github_username": "synthetic-backend-dev",
+        "languages": [
+          {
+            "name": "Python",
+            "repository_count": 6,
+            "share": 0.5
+          },
+          {
+            "name": "Go",
+            "repository_count": 4,
+            "share": 0.35
+          },
+          {
+            "name": "TypeScript",
+            "repository_count": 2,
+            "share": 0.15
+          }
+        ],
+        "frameworks": [
+          {
+            "name": "FastAPI",
+            "category": "backend",
+            "repository_count": 4,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Django",
+            "category": "backend",
+            "repository_count": 3,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Gin",
+            "category": "backend",
+            "repository_count": 2,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Celery",
+            "category": "backend",
+            "repository_count": 2,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          }
+        ],
+        "libraries": [
+          {
+            "name": "PostgreSQL",
+            "category": "database",
+            "repository_count": 5,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "SQLAlchemy",
+            "category": "database",
+            "repository_count": 3,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Redis",
+            "category": "database",
+            "repository_count": 3,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Docker",
+            "category": "devops_cloud",
+            "repository_count": 4,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          }
+        ],
+        "domains": [
+          {
+            "name": "Backend",
+            "strength": 0.8,
+            "repository_count": 8,
+            "primary_skills": []
+          },
+          {
+            "name": "DevOps",
+            "strength": 0.35,
+            "repository_count": 3,
+            "primary_skills": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "synthetic-backend-dev-0",
+            "full_name": "synthetic-backend-dev/repo0",
+            "url": "https://github.com/synthetic-backend-dev/repo0",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 68.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          },
+          {
+            "name": "synthetic-backend-dev-1",
+            "full_name": "synthetic-backend-dev/repo1",
+            "url": "https://github.com/synthetic-backend-dev/repo1",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 68.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          },
+          {
+            "name": "synthetic-backend-dev-2",
+            "full_name": "synthetic-backend-dev/repo2",
+            "url": "https://github.com/synthetic-backend-dev/repo2",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 68.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          }
+        ],
+        "engineering_practices": [
+          {
+            "name": "testing",
+            "repository_count": 5,
+            "repositories": []
+          },
+          {
+            "name": "readme",
+            "repository_count": 5,
+            "repositories": []
+          },
+          {
+            "name": "ci_cd",
+            "repository_count": 4,
+            "repositories": []
+          },
+          {
+            "name": "documentation",
+            "repository_count": 4,
+            "repositories": []
+          }
+        ],
+        "quality_score": 68.0,
+        "confidence": {
+          "level": "High",
+          "score": 0.7,
+          "reason": "Synthetic snapshot for the benchmark dataset."
+        },
+        "evidence": {
+          "items": [],
+          "coverage": {},
+          "by_repository": {}
+        }
+      },
+      "jobs": [
+        {
+          "id": "j201",
+          "title": "Backend Engineer (Python)",
+          "company": "APIHub",
+          "location": "Remote",
+          "description": "Backend Engineer to design and build scalable REST APIs using Python, FastAPI, and PostgreSQL. Responsibilities include database modeling, caching with Redis, unit testing, and containerized deployments with Docker.",
+          "url": "https://example.com/jobs/j201",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 1
+        },
+        {
+          "id": "j202",
+          "title": "Backend Engineer (Go)",
+          "company": "Streamly",
+          "location": "Remote",
+          "description": "Backend Engineer experienced in Go and Gin to build high-throughput services. You will work on distributed systems, message queues, and gRPC APIs. Strong grasp of concurrency and performance tuning required.",
+          "url": "https://example.com/jobs/j202",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 2
+        },
+        {
+          "id": "j203",
+          "title": "Full Stack Developer",
+          "company": "WebNest",
+          "location": "Remote",
+          "description": "Full Stack Developer comfortable with TypeScript, React on the frontend and Node.js or Python on the backend. Build features end to end, integrate with PostgreSQL, and ship frequently using CI/CD.",
+          "url": "https://example.com/jobs/j203",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 3
+        },
+        {
+          "id": "j204",
+          "title": "Machine Learning Engineer",
+          "company": "MindGrid",
+          "location": "Remote",
+          "description": "Machine Learning Engineer to train deep learning models with PyTorch and deploy them at scale. Experience with model serving, MLOps, and GPU infrastructure is required.",
+          "url": "https://example.com/jobs/j204",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 4
+        },
+        {
+          "id": "j205",
+          "title": "Data Engineer",
+          "company": "PipeFlow",
+          "location": "Remote",
+          "description": "Data Engineer to build ETL pipelines with Spark and Airflow, orchestrate data warehouses, and model data in dbt. Strong SQL and cloud experience required.",
+          "url": "https://example.com/jobs/j205",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 5
+        },
+        {
+          "id": "j206",
+          "title": "DevOps Engineer",
+          "company": "KubeOps",
+          "location": "Remote",
+          "description": "DevOps Engineer to own Kubernetes clusters, Terraform infrastructure, and CI/CD tooling. Experience with AWS, Helm, and incident response required.",
+          "url": "https://example.com/jobs/j206",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 6
+        }
+      ]
+    },
+    {
+      "case_id": "frontend-engineer",
+      "github_username": "synthetic-frontend-dev",
+      "profile": {
+        "github_username": "synthetic-frontend-dev",
+        "languages": [
+          {
+            "name": "TypeScript",
+            "repository_count": 7,
+            "share": 0.6
+          },
+          {
+            "name": "JavaScript",
+            "repository_count": 5,
+            "share": 0.3
+          },
+          {
+            "name": "CSS",
+            "repository_count": 3,
+            "share": 0.1
+          }
+        ],
+        "frameworks": [
+          {
+            "name": "React",
+            "category": "frontend",
+            "repository_count": 6,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Next.js",
+            "category": "frontend",
+            "repository_count": 3,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Vue",
+            "category": "frontend",
+            "repository_count": 2,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Node.js",
+            "category": "backend",
+            "repository_count": 2,
+            "average_confidence": 0.8,
+            "evidence_repositories": []
+          }
+        ],
+        "libraries": [
+          {
+            "name": "Redux",
+            "category": "frontend",
+            "repository_count": 3,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Tailwind CSS",
+            "category": "frontend",
+            "repository_count": 3,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          },
+          {
+            "name": "Jest",
+            "category": "testing",
+            "repository_count": 3,
+            "average_confidence": 0.7,
+            "evidence_repositories": []
+          }
+        ],
+        "domains": [
+          {
+            "name": "Frontend",
+            "strength": 0.8,
+            "repository_count": 8,
+            "primary_skills": []
+          },
+          {
+            "name": "Backend",
+            "strength": 0.2,
+            "repository_count": 2,
+            "primary_skills": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "synthetic-frontend-dev-0",
+            "full_name": "synthetic-frontend-dev/repo0",
+            "url": "https://github.com/synthetic-frontend-dev/repo0",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 62.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          },
+          {
+            "name": "synthetic-frontend-dev-1",
+            "full_name": "synthetic-frontend-dev/repo1",
+            "url": "https://github.com/synthetic-frontend-dev/repo1",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 62.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          },
+          {
+            "name": "synthetic-frontend-dev-2",
+            "full_name": "synthetic-frontend-dev/repo2",
+            "url": "https://github.com/synthetic-frontend-dev/repo2",
+            "description": "A sample project.",
+            "primary_language": "Python",
+            "stars": 10,
+            "quality_score": 62.0,
+            "frameworks": [],
+            "domains": [],
+            "engineering_practices": [],
+            "evidence": []
+          }
+        ],
+        "engineering_practices": [
+          {
+            "name": "testing",
+            "repository_count": 4,
+            "repositories": []
+          },
+          {
+            "name": "readme",
+            "repository_count": 4,
+            "repositories": []
+          },
+          {
+            "name": "ci_cd",
+            "repository_count": 2,
+            "repositories": []
+          },
+          {
+            "name": "documentation",
+            "repository_count": 3,
+            "repositories": []
+          }
+        ],
+        "quality_score": 62.0,
+        "confidence": {
+          "level": "Medium",
+          "score": 0.62,
+          "reason": "Synthetic snapshot for the benchmark dataset."
+        },
+        "evidence": {
+          "items": [],
+          "coverage": {},
+          "by_repository": {}
+        }
+      },
+      "jobs": [
+        {
+          "id": "j301",
+          "title": "Frontend Engineer (React)",
+          "company": "BrightUI",
+          "location": "Remote",
+          "description": "Frontend Engineer to build beautiful, accessible web applications with React and TypeScript. Deep experience with modern React hooks, state management with Redux, and component libraries required.",
+          "url": "https://example.com/jobs/j301",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 1
+        },
+        {
+          "id": "j302",
+          "title": "UI Developer",
+          "company": "DesignCraft",
+          "location": "Remote",
+          "description": "UI Developer focused on pixel-perfect implementations using HTML, CSS, and JavaScript. You will build design systems, work closely with designers, and ensure cross-browser compatibility.",
+          "url": "https://example.com/jobs/j302",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 2
+        },
+        {
+          "id": "j303",
+          "title": "Full Stack Engineer",
+          "company": "StackOps",
+          "location": "Remote",
+          "description": "Full Stack Engineer with strong TypeScript and React skills who can also build Node.js APIs. You will own features from database to UI and maintain CI/CD pipelines.",
+          "url": "https://example.com/jobs/j303",
+          "employment_type": "Full-time",
+          "human_relevance": 1,
+          "human_rank": 3
+        },
+        {
+          "id": "j304",
+          "title": "Backend Engineer",
+          "company": "CoreSys",
+          "location": "Remote",
+          "description": "Backend Engineer building Java Spring Boot microservices and REST APIs. Experience with relational databases and message brokers required. No frontend work.",
+          "url": "https://example.com/jobs/j304",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 4
+        },
+        {
+          "id": "j305",
+          "title": "Machine Learning Engineer",
+          "company": "TensorHub",
+          "location": "Remote",
+          "description": "Machine Learning Engineer to train models with TensorFlow and deploy on Kubernetes. Strong Python and MLOps background required.",
+          "url": "https://example.com/jobs/j305",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 5
+        },
+        {
+          "id": "j306",
+          "title": "DevOps Engineer",
+          "company": "CloudOps",
+          "location": "Remote",
+          "description": "DevOps Engineer for AWS infrastructure, Terraform, and CI/CD. Experience with Linux administration and monitoring stacks required.",
+          "url": "https://example.com/jobs/j306",
+          "employment_type": "Full-time",
+          "human_relevance": 0,
+          "human_rank": 6
+        }
+      ]
+    }
+  ]
+}
