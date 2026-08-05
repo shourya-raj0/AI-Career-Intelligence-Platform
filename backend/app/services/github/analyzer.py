@@ -164,15 +164,26 @@ class GitHubAnalysisReport(BaseModel):
 
 
 def build_github_client(token: str | None = None) -> Github:
-    """Build an authenticated :class:`Github` client from a token.
+    """Build an authenticated Github client."""
 
-    Falls back to an unauthenticated client (strictly rate limited to 60
-    requests/hour) when no token is provided, so analysis never crashes
-    solely because credentials are missing.
-    """
-    resolved_token = token or os.getenv("GITHUB_TOKEN")
+    from app.core.config import get_settings
+    import app.core.config as config_module
+    import os
+
+    settings = get_settings()
+
+    print("=" * 60)
+    print("CONFIG FILE:", config_module.__file__)
+    print("CURRENT WORKING DIRECTORY:", os.getcwd())
+    print("GITHUB TOKEN:", settings.github_token)
+    print("=" * 60)
+
+    resolved_token = token or settings.github_token
+
     if resolved_token:
         return Github(auth=Auth.Token(resolved_token))
+
+    print("WARNING: Using unauthenticated GitHub client")
     return Github()
 
 
