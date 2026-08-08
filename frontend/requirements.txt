@@ -1,1 +1,16 @@
+# Streamlit Cloud installs dependencies from this file (the entrypoint
+# directory takes precedence over the repository root). Include the backend
+# requirements so FastAPI, SQLAlchemy, LangGraph, and all backend dependencies
+# are installed in the deployed environment.
+#
+# sentence-transformers pulls torch; on Linux (Streamlit Cloud) the default
+# PyPI build is the ~2.5 GB CUDA wheel. The extra index below provides the
+# CPU-only build, which is pinned to keep the deployment within free-tier
+# limits.
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+-r ../backend/requirements.txt
+
 streamlit>=1.36
+torch==2.13.0+cpu
