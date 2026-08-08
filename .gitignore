@@ -15,6 +15,7 @@ venv/
 # Data / artifacts
 backend/data/jobs.db
 backend/data/evaluation_reports/
+backend/.env
 *.sqlite3
 
 # OS / editor
