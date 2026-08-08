@@ -8,9 +8,6 @@ startup/shutdown lifecycle (database init/dispose). Run locally with::
 
 from __future__ import annotations
 
-from dotenv import load_dotenv
-load_dotenv()
-
 
 import logging
 from contextlib import asynccontextmanager
