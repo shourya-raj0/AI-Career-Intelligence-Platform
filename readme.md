@@ -2,6 +2,8 @@
 
 **Turn GitHub profiles into actionable career intelligence**
 
+🚀 Live Demo: https://ai-career-intelligence-platform-uz9x6bpzjrdtyjrks93ujx.streamlit.app/
+
 ![Architecture Diagram](./assets/architecture.png)
 
 ## Overview
